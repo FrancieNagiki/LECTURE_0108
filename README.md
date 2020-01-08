@@ -1,4 +1,9 @@
-# STARTER_lab01
+# lab01
+
+This is lab01 by Bryan Terce and Phill Conrad!
+
+Javadoc: https://ucsb-cs56-w20.github.io/LECTURE_0108/javadoc/
+Repo: https://github.com/ucsb-cs56-w20/LECTURE_0108
 
 Starter code for [lab01](https://ucsb-cs56-m18.github.io/lab/lab01/) for UCSB CS56 M18
 
