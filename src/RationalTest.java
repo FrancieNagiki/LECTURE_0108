@@ -14,22 +14,22 @@ public class RationalTest {
     private Rational r_0_1; 
     
     @Before public void setUp() {
-	r_5_15 = new Rational(5,15);
-	r_24_6 = new Rational(24,6);
-	r_3_7  = new Rational(3,7);
-	r_13_4 = new Rational(13,4);
-	r_20_25 = new Rational(20,25);
-	r_0_1 = new Rational(0,1);
+        r_5_15 = new Rational(5,15);
+        r_24_6 = new Rational(24,6);
+        r_3_7  = new Rational(3,7);
+        r_13_4 = new Rational(13,4);
+        r_20_25 = new Rational(20,25);
+        r_0_1 = new Rational(0,1);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void test_denom_zero() {
-	Rational r = new Rational(1,0);
+	    Rational r = new Rational(1,0);
     }
     
     @Test
     public void test_getNumerator_20_25() {
-	assertEquals(4, r_20_25.getNumerator());
+	    assertEquals(4, r_20_25.getNumerator());
     }
     
     @Test
@@ -99,7 +99,17 @@ public class RationalTest {
 
     @Test
     public void test_gcd_20_25() {
-	assertEquals(5, Rational.gcd(20,25));
+	    assertEquals(5, Rational.gcd(20,25));
+    }
+
+    @Test
+    public void test_lcm_4_6() {
+	    assertEquals(12, Rational.lcm(4, 6));
+    }
+
+    @Test
+    public void test_lcm_0_5() {
+	    assertEquals(0, Rational.lcm(0, 5));
     }
 
     @Test
